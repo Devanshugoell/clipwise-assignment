@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main {
   margin: auto;
   max-width: 90vw;
@@ -7,8 +13,8 @@ main {
 }
 
 header {
-  height: 100vh;
-  margin-top: 1rem;
+  padding: 2rem;
+  background: url("background.png");
 }
 
 /* Styling of nav  */
@@ -20,6 +26,7 @@ ul {
   /* font-weight: bold; */
 }
 ul li {
+  color: #fff;
   list-style-type: none;
   margin: auto 15px;
 }
@@ -32,6 +39,9 @@ li:last-child {
 .heading {
   display: flex;
   margin-top: 5rem;
+  /* background: url("Vector.png");
+  position: relative;
+  top: 100px; */
 }
 
 .heading .about {
@@ -40,11 +50,13 @@ li:last-child {
 }
 
 .heading .about .welcome {
+  color: #fff;
   font-size: 3rem;
   margin-bottom: 0;
 }
 
 .heading .about h1 {
+  color: #fff;
   font-size: 3rem;
   margin: 0;
 }
@@ -58,19 +70,41 @@ li:last-child {
 .heading .carousel {
   text-align: center;
   border-radius: 50px;
-  background: #000;
+  background: #fff;
+  margin-right: 1rem;
+  padding: 4rem 0;
   width: 40vw;
 }
 
 .heading .about button {
+  color: #317189;
   padding: 1rem 2rem;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 0.5rem;
   margin-right: 1rem;
   background: #f9f2f8;
+  border: none;
+  font-weight: 570;
+  font-size: 1rem;
 }
 
 .heading .about .aboutBtn {
   background: transparent;
   border: none;
+}
+
+.carousel .new-lot {
+  width: 5rem;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  background: rgb(138, 147, 229);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+}
+
+header .scroll-down {
+  display: block;
+  margin: 1rem auto;
+  width: 100px;
 }
