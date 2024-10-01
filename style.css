@@ -13,8 +13,9 @@ main {
 }
 
 header {
+  border-bottom: 0.1px solid rgb(121, 216, 254);
   padding: 2rem;
-  background: url("background.png");
+  background: url("background-overlay2.png");
 }
 
 /* Styling of nav  */
@@ -29,6 +30,7 @@ ul li {
   color: #fff;
   list-style-type: none;
   margin: auto 15px;
+  cursor: pointer;
 }
 li:last-child {
   margin-left: 100px;
@@ -73,7 +75,9 @@ li:last-child {
   background: #fff;
   margin-right: 1rem;
   padding: 4rem 0;
-  width: 40vw;
+  width: 50vw;
+  height: 38vw;
+  box-shadow: 9px 10px 10px #f2f2f2;
 }
 
 .heading .about button {
@@ -86,11 +90,13 @@ li:last-child {
   border: none;
   font-weight: 570;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .heading .about .aboutBtn {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .carousel .new-lot {
@@ -107,4 +113,119 @@ header .scroll-down {
   display: block;
   margin: 1rem auto;
   width: 100px;
+  cursor: pointer;
+}
+
+/* All Products styling */
+.all-products h2 {
+  text-align: center;
+  color: #31546d;
+  font-size: 2.3rem;
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.all-products h2::after {
+  content: "";
+  border-radius: 25px;
+  width: 4%;
+  height: 5px;
+  background-color: #f2f2f2;
+  position: absolute;
+  left: 47%;
+  bottom: 0;
+}
+
+.all-products .filter-options {
+  display: flex;
+}
+.filter,
+.sort {
+  margin: 1rem;
+  display: flex;
+}
+
+.filter p {
+  margin-right: 0.5rem;
+  color: #9ab0c0;
+}
+.sort p {
+  margin-right: 0.5rem;
+  color: #9ab0c0;
+}
+
+select {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #163b48;
+  cursor: pointer;
+}
+
+.img-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 23rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin: 1rem;
+}
+
+.img-boxes img {
+  width: 13rem;
+  margin: 1rem;
+}
+
+.img-boxes button,
+.all-products .view-all {
+  padding: 1rem 3rem;
+  box-shadow: 9px 10px 10px #f2f2f2;
+  border: 2.5px solid #71bafa;
+  border-radius: 15px;
+  color: #71bafa;
+  font-size: 0.8rem;
+  background: transparent;
+}
+
+.first-row-images .img-boxes:first-child {
+  box-shadow: 9px 10px 10px #f2f2f2;
+}
+
+.img-boxes .blue-button {
+  background: linear-gradient(to right, #74caed, #71bafa);
+  color: #fff;
+}
+
+.img-boxes:hover {
+  box-shadow: 12px 12px 20px #f2f2f2;
+}
+
+.img-boxes button:hover {
+  box-shadow: 12px 12px 20px #f2f2f2;
+  cursor: pointer;
+  background: linear-gradient(to right, #74caed, #71bafa);
+  color: #fff;
+}
+
+.first-row-images,
+.second-row-images {
+  display: flex;
+}
+
+.all-products .view-all {
+  text-align: center;
+  margin: 1rem auto;
+  display: block;
+}
+
+.view-all:hover {
+  box-shadow: 12px 12px 20px #f2f2f2;
+  cursor: pointer;
+  background: linear-gradient(to right, #74caed, #71bafa);
+  color: #fff;
 }
